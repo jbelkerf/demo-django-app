@@ -1,4 +1,4 @@
-#!/home/jbelkerf/demo-django-app/venv/bin/python
+#!/home/jbelkerf/Desktop/demo-django-app/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
