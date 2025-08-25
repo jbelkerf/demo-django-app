@@ -1,0 +1,11 @@
+
+<html>
+    <body>
+        <form action="/form" method="post">
+            {% crsf_token %}
+            <table>
+                {{ f.as_table }}
+            </table>
+        </form>
+    </body>
+</html>
