@@ -18,4 +18,4 @@ class Person(models.Model):
     age = models.IntegerField(default = 20)
 
     def __str__(self) -> str:
-        return self.name + "-->" + self.email
+        return self.user_name + "-->" + self.email

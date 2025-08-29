@@ -2,10 +2,11 @@
 <html>
     <body>
         <form action="/form" method="post">
-            {% crsf_token %}
+            {% csrf_token %}
             <table>
                 {{ f.as_table }}
             </table>
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>

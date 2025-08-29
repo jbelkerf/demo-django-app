@@ -1,4 +1,5 @@
 from django import forms
+from my_app.models import Person
 
 class Appform(forms.Form):
     name = forms.CharField(label="name of user", max_length=10)
@@ -9,3 +10,7 @@ class Appform(forms.Form):
               ('Sieries', 'Sieries'))
     field = forms.ChoiceField(choices=hobies)
 
+class PersonForm(forms.ModelForm):
+    class Meta:
+        model = Person
+        fields = "__all__"
