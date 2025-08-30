@@ -7,6 +7,13 @@ from django.http import HttpResponse
 from .forms import Appform, PersonForm, LoginForm
 from .models import Person
 
+def users(request):
+    try:
+        persons = Person.objects.all()
+    except:
+        return HttpResponse(content="<h1>you don't have any users<h1>")
+    return  render(request, 'users.html', {'users': persons})
+
 def home(request):
     return render(request, 'home.html', {})
 

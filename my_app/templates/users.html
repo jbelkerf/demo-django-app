@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <H1>Users</H1>
+    <ul>
+        {% comment "note" %}
+        this is a view for getting all users
+        {% endcomment%}
+        {% for user in users %}
+            <li>id :  {{forloop.counter}} ,username : {{user.user_name}}, email :  {{user.email}},  age :  {{user.age}} </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
